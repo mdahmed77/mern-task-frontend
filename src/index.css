@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.smooth {
+    @apply transition-all duration-150 ease-out
+}
+
+.invisible-scroll::-webkit-scrollbar {
+    @apply w-[2px] bg-transparent;
+}
+
+.invisible-scroll::-webkit-scrollbar-thumb {
+    @apply bg-transparent rounded-[10px];
+}
+
+.invisible-scroll:hover::-webkit-scrollbar-thumb {
+    @apply bg-black/5;
+}
+
+.invisible-scroll::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
